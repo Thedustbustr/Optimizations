@@ -13,11 +13,26 @@ This will be a quick and simple way to optimize your Windows 11 (It probably wor
 
 
 
+# Good Practices:
+The best way to keep your PC optimized is to follow the good practices.
+1. Be careful when downloading things as this can prevent downloads of malware: pay attention to redirect sites, installers, and READ EVERYTHING
+2. Delete files you don't use, clear out space
+3. Uninstall any programs you are not using
+4. Disable almost all startup apps
+
+
+
+
+
+
+
+
+
 # The Ultimate Windows Utility
 [The Ultimate Windows Utility](https://christitus.com/windows-tool/) is easily one of the best programs for debloating windows. You can also install a wide variety of apps from this program.
 
 ### Installation 
-To install it, open a powershell window as an administrator then type in the following command:<br /><sub> Note: If it askes you to install chocolatey, type `y`:</sub>
+To install it, open a powershell window as an administrator then type in the following command:<br /><sub> Note: If it askes you to install chocolatey, type `y`</sub>
 ```
 iwr -useb https://christitus.com/win | iex
 ```
@@ -170,16 +185,34 @@ If you are having issues with high memory usage, [Mem Reduct](https://www.henryp
 
 
 # Nvidia Drivers (Nvidia Only)
-The latest graphics drivers usually maintain the highest performance and stability. To improve stability further, I installed the Nvidia Studio Drivers which update less frequently but are more stable. 
+The latest graphics drivers usually maintain the highest performance and stability. But, they tend to have alot of bloat along with it. But we can remove that.
 
 ### Installation
-1. The best way to download these drivers is through Nvidia GeForce Experience which you can download [here](https://www.nvidia.com/en-us/geforce/geforce-experience/)
-2. Run the .exe file to install
-3. Once installed run the program
+1. Download and install the latest drivers from the offical website [here](https://www.nvidia.com/en-us/geforce/drivers/)
+2. Download the NVCleaner program from [this_github](https://github.com/Thedustbustr/Optimizations/tree/main/NvidiaDriverDebloat)
+3. Run the .exe file as an administrator
 
-**<ins>Install Studio Drivers<ins>:**<br /><br />
-![Drivers](https://github.com/Thedustbustr/Optimizations/blob/main/.images/Drivers.png)<br /><br />
-![Studio](https://github.com/Thedustbustr/Optimizations/blob/main/.images/Studio.png)
+### Settings
+1. Select the newest drivers you just downloaded
+![DriverSelect](https://github.com/Thedustbustr/Optimizations/blob/main/.images/DriverSelect.png)<br /><br />
+![Driver](https://github.com/Thedustbustr/Optimizations/blob/main/.images/Driver.png)<br /><br />
+![DriverNext](https://github.com/Thedustbustr/Optimizations/blob/main/.images/DriverNext.png)<br /><br />
+
+2. Select the driver features you would like. I personally use audio through my display cables so I installed "HD Audio via HDMI" feature, although this is by no means necessary
+<br /><sub> Note: If you are using a laptop, the "Optimus" feature may be required </sub><br /><br />
+![DriverSettingsSelect](https://github.com/Thedustbustr/Optimizations/blob/main/.images/DriverSettingsSelect.png)<br /><br />
+
+3. Select the tweaks for the drivers. These are my recommended tweaks:
+![DriverOptionSelect1](https://github.com/Thedustbustr/Optimizations/blob/main/.images/DriverOptionSelect1.png)<br /><br />
+![DriverOptionSelect2](https://github.com/Thedustbustr/Optimizations/blob/main/.images/DriverOptionSelect2.png)<br /><br />
+
+4. Now create a new folder and move the generated driver files to the newly created folder
+![DriverFolder](https://github.com/Thedustbustr/Optimizations/blob/main/.images/DriverFolder.png)<br /><br />
+![DriverMove](https://github.com/Thedustbustr/Optimizations/blob/main/.images/DriverMove.png)<br /><br />
+
+5. Before you run the installation, here are a few things of note. If you followed all of the settings listed above, your PC will automatically restart. Also, your current graphics drivers and settings will be removed. One last note, because we are altering the driver, windows may show a security warning that looks like the image below. If you followed the settings above, it will appear shortly and then disappear. Otherwise, just make sure to click "Install this driver software anyway". After your computer restarts, you may need to run the "setup.exe" file one more time. To start the install, run the "setup.exe" file in the newly created folder.
+
+![DriverSecurity](https://github.com/Thedustbustr/Optimizations/blob/main/.images/DriverSecurity.png)<br /><br />
 
 
 
@@ -190,41 +223,7 @@ The latest graphics drivers usually maintain the highest performance and stabili
 
 
 # Optimal Nvidia Control Panel Options (Nvidia Only)
-Stock Nvidia Control Panel options are kinda bad. So I found (to my knowledge) the most optimal settings.
-
-### Installation
-1. Download the NvidiaProfileInspector for [this github](https://github.com/Thedustbustr/Optimizations/tree/main/NvidiaProfileInspector) (the zip file)
-2. Run the .exe file
-3. Download the BestPerformance profile from [this github](https://github.com/Thedustbustr/Optimizations/tree/main/NvidiaProfileInspector) (under profiles)
-
-**<ins>Set Optimal Settings<ins>:**<br /><br />
-![NvidiaInspector](https://github.com/Thedustbustr/Optimizations/blob/main/.images/NvidiaInspector.png)<br /><br />
-![Profile](https://github.com/Thedustbustr/Optimizations/blob/main/.images/Profile.png)<br /><br />
-![Apply](https://github.com/Thedustbustr/Optimizations/blob/main/.images/Apply.png)
-
-
-
-
-
-
-
-
-
-# Overclock Nvidia GPU (Nvidia Only)
-Using Nvidia GeForce Experience, you can safely overclock your GPU automatically.
-
-### Installation
-1. The best way to download these drivers is through Nvidia GeForce Experience which you can download [here](https://www.nvidia.com/en-us/geforce/geforce-experience/)
-2. Run the .exe file to install
-3. Once installed run the program
-
-**<ins>Overclock GPU<ins>:**<br /><br />
-![Settings](https://github.com/Thedustbustr/Optimizations/blob/main/.images/Settings.png)<br /><br />
-![Overlay](https://github.com/Thedustbustr/Optimizations/blob/main/.images/Overlay.png)<br /><br />
-Press Alt+Z by default to open the Nvidia Overlay<br /><br />
-![Overlay](https://github.com/Thedustbustr/Optimizations/blob/main/.images/Performance.png)<br /><br />
-Make sure that: 
-1. You have nothing graphically intensive (e.g. games, wallapaper engine, etc.) running as it may mess up the results
-2. Your voltage maximum is at 100%<br /><br />
+Stock Nvidia Control Panel options are kinda bad. The issue is, I can't really give *the* best settings. It really depends on your setup. So here is a video that describes each setting extremely well:
+https://youtu.be/KamA-38gV7w?t=181
 
 ![Overclock](https://github.com/Thedustbustr/Optimizations/blob/main/.images/Overclock.png)
