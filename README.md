@@ -225,5 +225,3 @@ The latest graphics drivers usually maintain the highest performance and stabili
 # Optimal Nvidia Control Panel Options (Nvidia Only)
 Stock Nvidia Control Panel options are kinda bad. The issue is, I can't really give *the* best settings. It really depends on your setup. So here is a video that describes each setting extremely well:
 https://youtu.be/KamA-38gV7w?t=181
-
-![Overclock](https://github.com/Thedustbustr/Optimizations/blob/main/.images/Overclock.png)
