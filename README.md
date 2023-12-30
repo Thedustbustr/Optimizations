@@ -189,7 +189,7 @@ The latest graphics drivers usually maintain the highest performance and stabili
 
 ### Installation
 1. Download and install the latest drivers from the offical website [here](https://www.nvidia.com/en-us/geforce/drivers/)
-2. Download the NVCleaner program from [this_github](https://github.com/Thedustbustr/Optimizations/tree/main/NvidiaDriverDebloat)
+2. Download the NVCleaner program from [this github](https://github.com/Thedustbustr/Optimizations/tree/main/NvidiaDriverDebloat)
 3. Run the .exe file as an administrator
 
 ### Settings
